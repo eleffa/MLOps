@@ -20,6 +20,10 @@ jobs:
     - name: Install dependencies
       run: |
         make install
+    
+    - name: Update pylint and astroid
+      run: |
+        pip install --upgrade pylint astroid
 
     - name: Lint with pylint
       run: |
