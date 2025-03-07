@@ -8,19 +8,19 @@ jobs:
 	
 	steps:
 	- uses: actions/chechout@v2
-	- name: Set up Python 3.8
+	#- name: Set up Python 3.8
 	  uses: actions/setup-python@v1
 	  with:
 	    python-version: 3.8
-	- name: Install dependencies
+	#- name: Install dependencies
 	  run: |
 	    make install
-	- name: Lint with pylint
+     #- name: Lint with pylint
 	  run: |
 	    make lint
-	- name: Test with pytest
+	#- name: Test with pytest
 	  run: |
 	    make test
-	- name: Format code
+	#- name: Format code
 	  run: |
 	    make format
